@@ -29,7 +29,7 @@ public class Main {
             String textwert = "Kein Text angegeben";
 
             System.out.println("B.OS " + vers + ".0 startet...");
-            System.out.println("Versionscheck... Version: " +  vers);
+            System.out.println("Versionscheck... Version: " +  vers + "Ihre B.OS Verssion ist schon sehr alt. Überlegen Sie, auf ein neueres B.OS zu upgraden.");
             System.out.println("...\n...\n...\nHerzlich Willkommen!");
             System.out.println(eingabeauff);
 
@@ -79,7 +79,7 @@ public class Main {
                                             }
                                             else {
                                                 if (eingabes1.equals("-wthr")) {
-                                                    JFrame workthroughf = new JFrame("Workthrough");
+                                                    JFrame workthroughf = new JFrame("Workthrough ALT");
                                                     workthroughf.setSize(900, 500);
                                                     workthroughf.setResizable(false);
 
@@ -111,7 +111,7 @@ public class Main {
                                                     workthroughf.add(menubarwt1, BorderLayout.NORTH);
 
 
-                                                    JTextField wtText1 = new JTextField("Herzlich Willkommen bei Workthrough 1.0.0 in ihrem B.OS System!", 15);
+                                                    JTextField wtText1 = new JTextField("Herzlich Willkommen bei Workthrough 1.0.0 in ihrem B.OS System!\nDiese Version von Workthrough wird leider nicht mehr unterstützt, da B.OS 1.2 seit 2022 nicht mehr unterhalten wird.\nUpgraden Sie auf das neue B.OS 2.0 für ein  benutzerfreundliccheres und intuitiveres Arbeitsumfeld!", 15);
                                                     wtText1.setForeground(Color.DARK_GRAY);
                                                     wtText1.setEditable(false);
 
@@ -123,12 +123,12 @@ public class Main {
                                                 }
                                                 else {
                                                     if (eingabes1.equals("-destr")) {
-                                                        System.out.println("WARNUNG, dieses System ist nun im Entwicklermodus, es kann unter Umständen ein Neustart erforderlich sein");
+                                                        System.out.println("WARNUNG, dieses System schaltet nun in den Entwicklermodus, es wird unter Umständen ein Neustart erforderlich sein");
                                                         operating = false;
                                                     }
                                                     else {
                                                         if(eingabes1.equals("-vers2")) {
-                                                            JFrame guibos = new JFrame("B.OS");
+                                                            JFrame guibos = new JFrame("D-B.OS ALT");
                                                             guibos.setSize(1280, 720);
                                                             guibos.setExtendedState(guibos.MAXIMIZED_BOTH);
                                                             guibos.setResizable(false);
@@ -196,7 +196,7 @@ public class Main {
             }
             System.out.println("\n\nWillkommen im Entwicklermodus");
             System.out.println("\n\nWas ist der Entwicklermodus? \nSie sind nun außerhalb der Systemschleife und haben so nur auf einige wenige Befehle Zugriff.");
-            System.out.println("\n\nWie komme ich wieder ins Hauptsystem?\nDies ist nun leider nicht mehr möglich. Zum Abschalten -exit.\n");
+            System.out.println("\n\nWie komme ich wieder ins Hauptsystem?\nDies ist nun leider nicht mehr möglich, da B.OS 1.2 diese Funktion nicht unterstützt. Zum Abschalten -exit.\n");
 
             while(operating == false) {
                 System.out.println("\nGeben sie einen Befehl ein. Liste mit -devlist.");
